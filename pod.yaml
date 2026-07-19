@@ -4,6 +4,7 @@ metadata:
   name: multi-conntainer-pod
   labels:
     env: Test
+  annotations:
     purpose: "checking multi conntainer pod"
 spec:
   containers:
