@@ -22,6 +22,9 @@ spec:
       value: "Kubernetes"
     - name: "TIME"
       value: "1Week"
+    envFrom:
+    - secretRef:
+      name: secret.yaml
 
   - name: almalinux
     image: almalinux:9
