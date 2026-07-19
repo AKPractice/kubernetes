@@ -10,6 +10,20 @@ spec:
   containers:
   - name: nginx
     image: nginx
+    resources:
+      requests:
+        memory: "64mi"
+        cpu: "0.25m"
+      limits:
+        memory: "128mi"
+        cpu: "0.25m"
   - name: almalinux
     image: almalinux:9
     command: ["sleep", '1000']
+    resources:
+      requests:
+        memory: "28mi"
+        cpu: "0.25m"
+      limits:
+        memory: "32mi"
+        cpu: "0.25m"
