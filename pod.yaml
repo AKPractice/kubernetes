@@ -17,6 +17,10 @@ spec:
       limits:
         memory: "128Mi"
         cpu: "0.25m"
+    env:
+      COURSE: "Kubernetes"
+      TIME: "1week"
+
   - name: almalinux
     image: almalinux:9
     command: ["sleep", '1000']
@@ -27,3 +31,6 @@ spec:
       limits:
         memory: "32Mi"
         cpu: "0.25m"
+    env:
+     IMAGE_OS: "Linux-9"
+     USAGE: "Check_Linux_Command"
