@@ -18,8 +18,10 @@ spec:
         memory: "128Mi"
         cpu: "0.25m"
     env:
-      COURSE: "Kubernetes"
-      TIME: "1week"
+    - name : "COURSE"
+      value: "Kubernetes"
+    - name: "TIME"
+      value: "1Week"
 
   - name: almalinux
     image: almalinux:9
@@ -32,5 +34,7 @@ spec:
         memory: "32Mi"
         cpu: "0.25m"
     env:
-     IMAGE_OS: "Linux-9"
-     USAGE: "Check_Linux_Command"
+    - name: "OS_NAME"
+      value: "LINUX-9"
+    - name: "IS_OS_RUNNING"
+      value: "YES"
