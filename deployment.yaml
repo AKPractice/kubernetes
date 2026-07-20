@@ -9,7 +9,7 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchlabels:
+    matchLabels:
       purpose: deployment-demo
       project: my-deployment
       env: dev
