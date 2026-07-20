@@ -7,7 +7,7 @@ metadata:
     project: My-deployment
     env: dev
 spec:
-  replicas: 3
+  replicas: 15
   selector:
     matchLabels:
       purpose: deployment-demo
