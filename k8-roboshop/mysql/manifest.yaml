@@ -14,8 +14,8 @@ data:
 
 apiVersion: apps/v1
 kind: Deployment
-matadata:
-  name: mysql-d
+metadata:
+  name: mysql
   namespace: roboshop
   labels:
     project: roboshop
@@ -24,7 +24,7 @@ matadata:
 spec:
   replicas: 1
   selector:
-    matchlabels:
+    matchLabels:
       project: roboshop
       component: mysql
       tier: db
