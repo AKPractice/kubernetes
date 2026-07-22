@@ -15,7 +15,7 @@ data:
 apiVersion: apps/v1
 kind: Deployment
 matadata:
-  name: mysql
+  name: mysql-d
   namespace: roboshop
   labels:
     project: roboshop
