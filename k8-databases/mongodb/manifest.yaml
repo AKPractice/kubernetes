@@ -66,7 +66,7 @@ spec:
       containers:
       - name: mongodb
         image: arunkumarnelluri/mongodb:v1
-        volumeMount:
+        volumeMounts:
         - name: mongodb-data
           mountPath: /data/db
   volumeClaimTemplates:
