@@ -9,7 +9,7 @@ spec:
   ports:
   - port: 80
     name: web
-  clusterIp: None
+  clusterIP: None
   selector:
     project: roboshop
     purpose: statefulset-demo
