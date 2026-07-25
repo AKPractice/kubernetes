@@ -44,7 +44,7 @@ spec:
     matchLabels:
       project: roboshop
       purpose: statefulset-demo
-  service: statefulset-headless-svc
+  service: "statefulset-headless-svc"
   template:
     metadata:
       labels:
