@@ -1,5 +1,5 @@
-kind: StorageClass
 apiVersion: storage.k8s.io/v1
+kind: StorageClass
 metadata:
   name: efs-dynamic
 provisioner: efs.csi.aws.com
@@ -7,5 +7,5 @@ reclaimPolicy: Retain
 parameters:
   provisioningMode: efs-ap
   fileSystemId: fs-02535b1412640b737
-  directoryPerms: 700
+  directoryPerms: "700"
   basePath: /roboshop
