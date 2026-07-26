@@ -1,0 +1,5 @@
+apiVersion: v2
+name: nginx
+version: 1.0 ##Chart Version
+description: nginx helm chart 
+appVersion: 1.1.0 ##APP version
