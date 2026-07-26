@@ -3,13 +3,13 @@ kind: Service
 metadata:
   name: lb-service
   labels:
-    purpose: lb-demo
+    project: roboshop
+    tier: app
 spec:
   type: LoadBalancer
   selector:
-    purpose: lb-demo
-    project: MyProject
-    env: dev
+    project: roboshop
+    tier: app
   ports:
     - protocol: TCP
       port: 80
