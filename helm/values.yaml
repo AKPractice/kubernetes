@@ -1,5 +1,5 @@
 deployment:
   replicas: 2
-  imageVersion: latest
+  imageVersion: 1.29.1
 service:
   targetport: 80
