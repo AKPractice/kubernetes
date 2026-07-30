@@ -1,0 +1,25 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: roboshop-trainee
+  name: roboshop
+rules:
+  apiGroup: [""] # "" indicates the core API group
+  resources: ["pods"]
+  verbs: ["get", "watch", "list"]
+
+---
+
+apiGroup: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: Arun
+  namespace: roboshop
+subjects:
+- kind: User
+  name: Arun
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: roboshop-trainee
+  apiGroup: rbac.authorization.k8s.io
